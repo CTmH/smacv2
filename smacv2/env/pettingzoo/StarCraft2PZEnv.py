@@ -3,7 +3,7 @@ from gymnasium.utils import EzPickle
 from gymnasium.utils import seeding
 from gymnasium import spaces
 from pettingzoo.utils.env import ParallelEnv
-from pettingzoo.utils.conversions import from_parallel_wrapper
+from pettingzoo.utils.conversions import parallel_to_aec_wrapper
 from pettingzoo.utils import wrappers
 import numpy as np
 
@@ -15,7 +15,7 @@ def parallel_env(max_cycles=max_cycles_default, **smac_args):
 
 
 def raw_env(max_cycles=max_cycles_default, **smac_args):
-    return from_parallel_wrapper(parallel_env(max_cycles, **smac_args))
+    return parallel_to_aec_wrapper(parallel_env(max_cycles, **smac_args))
 
 
 def make_env(raw_env):
