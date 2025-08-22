@@ -58,5 +58,6 @@ setup(
         "absl-py>=0.1.0",
         "numpy>=1.10",
         "pygame>=2.0.0",
+        "gymnasium>=1.2.0",
     ],
 )

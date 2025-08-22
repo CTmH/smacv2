@@ -1,3 +1,20 @@
+[project]
+name = "SMACv2"
+version="1.0.0"
+description = "SMACv2 - StarCraft Multi-Agent Challenge."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pysc2>=3.0.0",
+    "protobuf<3.21",
+    "s2clientprotocol>=4.10.1.75800.0",
+    "absl-py>=0.1.0",
+    "numpy>=1.10",
+    "pygame>=2.0.0",
+    "gymnasium>=1.2.0",
+    "pettingzoo>=1.25.0",
+]
+
 [tool.black]
 line-length = 79
 include = '\.pyi?$'
